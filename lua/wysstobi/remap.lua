@@ -1,4 +1,7 @@
 vim.g.mapleader = " "
+vim.keymap.set("i", "<C-c>", "<Esc>")
+
+-- open explorer
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- enable line reordering with capital "j" & "k" in visual mode
@@ -21,5 +24,8 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- replace word your on in whole file
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- find and replace
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
