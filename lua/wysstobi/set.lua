@@ -33,5 +33,3 @@ vim.opt.colorcolumn = "80"
 
 -- change default split behaviour
 vim.opt.splitright = true
-vim.opt.splitbelow = true
-asdfasdf
